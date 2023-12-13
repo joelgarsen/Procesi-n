@@ -22,12 +22,12 @@ public class Procesion {
         return procesionConMusica;
     }
     
-    public void setNombreDeLaProcesion (String nombreDeLaProcesion){
-        nombreDeLaProcesion = nombreDeLaProcesion;
+    public void setNombreDeLaProcesion (String nuevoNombreProcesion){
+        nombreDeLaProcesion = nuevoNombreProcesion;
     }
     
     public void añadirPasos (int Valor){
-        int AñadirPasos = numeroDePasos + Valor;
+        numeroDePasos = numeroDePasos + Valor;
     }
     
     public void hayMusica (){
