@@ -5,9 +5,9 @@ public class Procesion {
     
     private boolean procesionConMusica;
     public Procesion (String nombreProcesion,int numeroPasos) {
-        this.nombreDeLaProcesion = nombreProcesion;
-        this.numeroDePasos = numeroPasos;
-        this.procesionConMusica = false;
+        nombreDeLaProcesion = nombreProcesion;
+        numeroDePasos = numeroPasos;
+        procesionConMusica = false;
     }
     
     public String getNombreDeLaProcesión (){
@@ -23,7 +23,7 @@ public class Procesion {
     }
     
     public void setNombreDeLaProcesion (String nombreDeLaProcesion){
-        this.nombreDeLaProcesion = nombreDeLaProcesion;
+        nombreDeLaProcesion = nombreDeLaProcesion;
     }
     
     public void añadirPasos (int Valor){
@@ -31,6 +31,14 @@ public class Procesion {
     }
     
     public void hayMusica (){
-        this.procesionConMusica = !this.procesionConMusica;
+        procesionConMusica = !procesionConMusica;
+    }
+    
+    public String getDatos(){
+        return "| Procesión: " + nombreDeLaProcesion + "| Número de Pasos:" + numeroDePasos + "| Lleva banda:" + procesionConMusica;
+    }
+    
+    public void imprimirDatos (){
+        System.out.println ("| La procesión " + nombreDeLaProcesion + "| Número de Pasos: " + numeroDePasos + "| Lleva banda: " + procesionConMusica);
     }
 }
