@@ -35,10 +35,24 @@ public class Procesion {
     }
     
     public String getDatos(){
-        return "| Procesión: " + nombreDeLaProcesion + "| Número de Pasos:" + numeroDePasos + "| Lleva banda:" + procesionConMusica;
+    String  conMusica;
+    if(procesionConMusica){
+        conMusica  = "Si";
+    }
+    else{
+        conMusica = "No";
+    }
+    return "| Procesión: " + nombreDeLaProcesion + "| Número de Pasos:" + numeroDePasos + "| Lleva banda:" + conMusica;
     }
     
     public void imprimirDatos (){
-        System.out.println ("| La procesión " + nombreDeLaProcesion + "| Número de Pasos: " + numeroDePasos + "| Lleva banda: " + procesionConMusica);
+    String  conMusica;
+    if(procesionConMusica){
+        conMusica  = "Si";
+    } 
+    else{
+        conMusica = "No";
+    }
+    System.out.println ("| La procesión " + nombreDeLaProcesion + "| Número de Pasos: " + numeroDePasos + "| Lleva banda:" + conMusica);
     }
 }
